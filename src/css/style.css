@@ -1,5 +1,82 @@
-*{
- margin: 0;
- padding: 0;
+body{
+    background-color: #000000;
+}
 
+main::after{
+    content: "🤦‍♂️🤦‍♀️🤦‍♀️";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg,#000 40%, rgb(0, 0, 0, 0)65%) no-repeat;
+}
+
+
+main .personagem{
+    display: none;
+    height: 100vh;
+}
+
+
+main .personagem.selecionado{
+    display: block;
+}
+
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo{
+
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem{
+  
+   color: #ffffff;
+   font-size: 45px;
+   font-family: "Secular One"; 
+   font-weight: 400;
+   margin-bottom: 10px;
+}
+
+
+.conteudo .descricao{
+    color: #ffffff;
+    font-family: "Rubik";
+    line-height: 20px;    
+}
+
+.conteudo .logo{
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+}
+
+
+.botoes{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(0, 0, 0,0.3);
 }
